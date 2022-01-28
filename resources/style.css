@@ -55,6 +55,7 @@ nav {
 
 .hero {
     width: fit-content;
+    height: fit-content;
     margin: 10% auto;
     line-height: 2.6rem;
     letter-spacing: .1rem;
@@ -77,4 +78,21 @@ nav {
 
 .nameComma {
     font-family: 'Ubuntu Mono', monospace;
+}
+
+p {
+    font-family: Varela, sans-serif;
+    max-width: 777px;
+    line-height: 1.7rem;
+}
+
+.letsTalk {
+    padding: 2%;
+    border: 2px solid hsl(22, 95%, 53%);
+    border-radius: 5px;
+    color: hsl(22, 95%, 53%);
+    line-height: 4.5rem;
+    text-decoration: none;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bold;
 }
