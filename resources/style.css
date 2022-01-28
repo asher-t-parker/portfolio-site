@@ -51,3 +51,30 @@ nav {
     margin: 4%;
     text-decoration: none;
 }
+
+
+.hero {
+    width: fit-content;
+    margin: 10% auto;
+    line-height: 2.6rem;
+    letter-spacing: .1rem;
+}
+
+.hello {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.3rem;
+    color:hsl(22, 95%, 53%)
+}
+
+.iAm,
+.fullStack {
+    font-family: Raleway, sans-serif;
+}
+
+.fullStack {
+    color: hsl(180, 38%, 70%);
+}
+
+.nameComma {
+    font-family: 'Ubuntu Mono', monospace;
+}
