@@ -4,21 +4,21 @@
 
 html {
     font-size: 22px;
-    max-width: 100%;  
+    width: 100%;  
 }
 
 body {
     color: hsl(180, 100%, 93%);
     background-color: hsla(180, 100%, 10%, 1); 
-    max-width: 100%;
+    width: 100%;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
-    margin: 1rem .5rem;
+    width: 100%;
+    margin: 1.2rem .5rem;
 }
 
 .fullName {
@@ -38,13 +38,12 @@ nav {
     margin-right: .6rem;
     color:hsl(22, 95%, 53%);
     font-family: 'Ubuntu Mono', monospace;
-    width: fit-content;
 }
 
 
 .sectionLinks {
     color:hsl(180, 100%, 93%);
-    margin: 1rem;
+    margin: .7rem;
     text-decoration: none;
 }
 
@@ -64,6 +63,7 @@ nav {
     margin: 10% auto;
     line-height: 2.6rem;
     letter-spacing: .1rem;
+    min-width: 748px;
 }
 
 .hello {
@@ -73,12 +73,33 @@ nav {
 }
 
 .iAm,
-.fullStack {
+.fullStack,
+.adjContainer {
     font-family: Raleway, sans-serif;
+}
+
+.adjContainer {
+    color: hsl(22, 95%, 53%);
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    grid-template-rows: 1;
+}
+
+.adj1,
+.adj2,
+.adj3 {
+    display: inline;
+    grid-area: 1/1;
+}
+
+.adj2,
+.adj3 {
+    opacity: 0;
 }
 
 .fullStack {
     color: hsl(180, 38%, 70%);
+    grid-area: 1/2;
 }
 
 .nameComma {
@@ -87,7 +108,7 @@ nav {
 
 p {
     font-family: Varela, sans-serif;
-    max-width: 777px;
+    max-width: 776px;
     line-height: 1.7rem;
 }
 
@@ -107,6 +128,7 @@ p {
     font-family: 'Ubuntu Mono', monospace;
     display: flex;
     justify-content: space-between;
+    max-width: 777px;
 }
 
 .icons {
@@ -128,14 +150,33 @@ p {
 }
 
 @media only screen 
-and (max-width: 767px) {
+and (max-width: 768px) {
     nav .sectionLinks,
     nav .navDivider {
         display: none;
     }
+}
 
-    nav {
+@media only screen 
+and (max-width: 584px) {
+    body {
         width: fit-content;
     }
-  
+}
+
+@media only screen 
+and (max-width: 425px) {
+    .hero {
+        min-width: 0;
+    }
+
+    .adjContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1 1;
+    }
+
+    .fullStack {
+        color: hsl(180, 38%, 70%);
+        grid-area: 2/1;
+    }
 }
