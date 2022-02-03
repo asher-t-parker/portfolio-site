@@ -63,7 +63,7 @@ nav {
     margin: 10% auto;
     line-height: 2.6rem;
     letter-spacing: .1rem;
-    min-width: 748px;
+    min-width: 768px;
 }
 
 .hello {
@@ -113,7 +113,7 @@ p {
 }
 
 .letsTalk {
-    padding: 2%;
+    padding: .7rem;
     border: 2px solid hsl(22, 95%, 53%);
     border-radius: 5px;
     color: hsl(22, 95%, 53%);
@@ -128,7 +128,7 @@ p {
     font-family: 'Ubuntu Mono', monospace;
     display: flex;
     justify-content: space-between;
-    max-width: 777px;
+    flex-wrap: wrap;
 }
 
 .icons {
@@ -178,5 +178,9 @@ and (max-width: 425px) {
     .fullStack {
         color: hsl(180, 38%, 70%);
         grid-area: 2/1;
+    }
+
+    p {
+        min-width: 450px;
     }
 }
