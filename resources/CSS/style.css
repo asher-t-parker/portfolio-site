@@ -1,50 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
-    font-size: 20px;
+    font-size: 22px;
+    max-width: 100%;  
 }
 
 body {
     color: hsl(180, 100%, 93%);
     background-color: hsla(180, 100%, 10%, 1); 
+    max-width: 100%;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
+    margin: 1rem .5rem;
 }
 
 .fullName {
-    margin: 2%;
+    margin: .5rem;
     color: hsl(22, 95%, 53%);
     font-family: Varela, sans-serif;
     border-top: 1px solid hsl(180, 100%, 93%);
     border-bottom: 1px solid hsl(180, 100%, 93%);
     border-radius: 4%;
-    padding: 1% 0;
+    padding: .3rem 0;
 }
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin: 1%;
-    margin-right: 5%;
+    justify-content: space-between;
+    margin-right: .6rem;
     color:hsl(22, 95%, 53%);
     font-family: 'Ubuntu Mono', monospace;
+    width: fit-content;
 }
+
 
 .sectionLinks {
     color:hsl(180, 100%, 93%);
-    margin: 4%;
+    margin: 1rem;
     text-decoration: none;
 }
 
 .resumeButton {
-    padding: 4%;
-    border: 1px solid hsl(22, 95%, 53%);
+    padding: .6rem;
+    border: 2px solid hsl(22, 95%, 53%);
     border-radius: 5px;
     color: hsl(22, 95%, 53%);
-    margin: 4%;
     text-decoration: none;
 }
 
@@ -52,10 +60,10 @@ nav {
 .hero {
     width: fit-content;
     height: fit-content;
+    padding: 0 1rem;
     margin: 10% auto;
     line-height: 2.6rem;
     letter-spacing: .1rem;
-    align-self: center;
 }
 
 .hello {
@@ -108,8 +116,8 @@ p {
 }
 
 .gitDiv {
-   display: inline-block
-   float: right;
+   display: flex;
+   justify-content: flex-end;
 }
 
 .gitHubLink {
@@ -117,4 +125,17 @@ p {
     font-family: 'Ubuntu Mono', monospace;
     text-decoration: none;
     float: right;
+}
+
+@media only screen 
+and (max-width: 767px) {
+    nav .sectionLinks,
+    nav .navDivider {
+        display: none;
+    }
+
+    nav {
+        width: fit-content;
+    }
+  
 }
