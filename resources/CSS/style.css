@@ -63,7 +63,6 @@ nav {
     margin: 10% auto;
     line-height: 2.6rem;
     letter-spacing: .1rem;
-    min-width: 768px;
 }
 
 .hello {
@@ -158,6 +157,13 @@ and (max-width: 768px) {
 }
 
 @media only screen 
+and (max-width: 727px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media only screen 
 and (max-width: 584px) {
     body {
         width: fit-content;
@@ -166,10 +172,6 @@ and (max-width: 584px) {
 
 @media only screen 
 and (max-width: 425px) {
-    .hero {
-        min-width: 0;
-    }
-
     .adjContainer {
         grid-template-columns: 1fr;
         grid-template-rows: 1 1;
@@ -178,9 +180,5 @@ and (max-width: 425px) {
     .fullStack {
         color: hsl(180, 38%, 70%);
         grid-area: 2/1;
-    }
-
-    p {
-        min-width: 450px;
     }
 }
