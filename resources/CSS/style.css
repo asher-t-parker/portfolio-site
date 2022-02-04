@@ -84,9 +84,38 @@ nav {
     flex-wrap: wrap;
 }
 
+.adjContainer span {
+    display: inline-block;
+}
+
+.overlapper {
+    display: grid;
+    grid-template: 1 / 1;
+}
+
+.adj2 span,
+.adj3 span {
+    opacity: 0;
+}
+
+.adj1,
 .adj2,
 .adj3 {
-    display: none;
+    transform: translateY(-20px);
+}
+
+.adj1,
+.adj2,
+.adj3 {
+    grid-area: 1 / 1;
+}
+
+.adj2 {
+    letter-spacing: .5rem;
+}
+
+.adj3 {
+    letter-spacing: .18rem;
 }
 
 .fullStack {
