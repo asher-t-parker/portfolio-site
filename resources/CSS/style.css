@@ -18,11 +18,11 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 1.2rem .5rem;
+    margin: 1.2rem 0;
 }
 
 .fullName {
-    margin: .5rem;
+    margin: .5rem 0 .5rem 1rem;
     color: hsl(22, 95%, 53%);
     font-family: Varela, sans-serif;
     border-top: 1px solid hsl(180, 100%, 93%);
@@ -35,7 +35,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: .6rem;
+    margin: .5rem 1rem .5rem 0;
     color:hsl(22, 95%, 53%);
     font-family: 'Ubuntu Mono', monospace;
 }
@@ -79,21 +79,14 @@ nav {
 
 .adjContainer {
     color: hsl(22, 95%, 53%);
-    display: grid;
-    grid-template-columns: 12rem 1fr;
-    grid-template-rows: 1;
-}
-
-.adj1,
-.adj2,
-.adj3 {
-    display: inline;
-    grid-area: 1/1;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .adj2,
 .adj3 {
-    opacity: 0;
+    display: none;
 }
 
 .fullStack {
@@ -150,6 +143,7 @@ p {
 
 @media only screen 
 and (max-width: 768px) {
+    
     nav .sectionLinks,
     nav .navDivider {
         display: none;
@@ -157,28 +151,9 @@ and (max-width: 768px) {
 }
 
 @media only screen 
-and (max-width: 727px) {
+and (max-width: 499px) {
     html {
         font-size: 16px;
     }
 }
 
-@media only screen 
-and (max-width: 584px) {
-    body {
-        width: fit-content;
-    }
-}
-
-@media only screen 
-and (max-width: 425px) {
-    .adjContainer {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1 1;
-    }
-
-    .fullStack {
-        color: hsl(180, 38%, 70%);
-        grid-area: 2/1;
-    }
-}
