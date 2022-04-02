@@ -110,12 +110,12 @@ nav {
     grid-area: 1 / 1;
 }
 
-.adj2 {
-    letter-spacing: .5rem;
+.adj1 {
+    letter-spacing: .15rem;
 }
 
-.adj3 {
-    letter-spacing: .18rem;
+.adj2 {
+    letter-spacing: .35rem;
 }
 
 .fullStack {
