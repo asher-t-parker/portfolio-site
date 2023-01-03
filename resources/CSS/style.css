@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 22px;
+    width: 100%;  
+}
+
+body {
+    color: hsl(180, 100%, 93%);
+    background-color: hsla(180, 100%, 10%, 1); 
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 1.2rem 0;
+}
+
+.fullName {
+    margin: .5rem 0 .5rem 1rem;
+    color: hsl(22, 95%, 53%);
+    font-family: Varela, sans-serif;
+    border-top: 1px solid hsl(180, 100%, 93%);
+    border-bottom: 1px solid hsl(180, 100%, 93%);
+    border-radius: 4%;
+    padding: .3rem 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: .5rem 1rem .5rem 0;
+    color:hsl(22, 95%, 53%);
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+
+.sectionLinks {
+    color:hsl(180, 100%, 93%);
+    margin: .7rem;
+    text-decoration: none;
+}
+
+.resumeButton {
+    padding: .6rem;
+    border: 2px solid hsl(22, 95%, 53%);
+    border-radius: 5px;
+    color: hsl(22, 95%, 53%);
+    text-decoration: none;
+}
+
+
+.hero {
+    width: fit-content;
+    height: fit-content;
+    padding: 0 1rem;
+    margin: 10% auto;
+    line-height: 2.6rem;
+    letter-spacing: .1rem;
+}
+
+.hello {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.3rem;
+    color:hsl(22, 95%, 53%)
+}
+
+.iAm,
+.fullStack,
+.adjContainer {
+    font-family: Raleway, sans-serif;
+}
+
+.adjContainer {
+    color: hsl(22, 95%, 53%);
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.adjContainer span {
+    display: inline-block;
+}
+
+.overlapper {
+    display: grid;
+    grid-template: 1 / 1;
+}
+
+.adj2 span,
+.adj3 span {
+    opacity: 0;
+}
+
+.adj1,
+.adj2,
+.adj3 {
+    transform: translateY(-20px);
+}
+
+.adj1,
+.adj2,
+.adj3 {
+    grid-area: 1 / 1;
+}
+
+.adj1 {
+    letter-spacing: .15rem;
+}
+
+.adj2 {
+    letter-spacing: .35rem;
+}
+
+.fullStack {
+    color: hsl(180, 38%, 70%);
+    grid-area: 1/2;
+}
+
+.nameComma {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+p {
+    font-family: Varela, sans-serif;
+    max-width: 776px;
+    line-height: 1.7rem;
+}
+
+.letsTalk {
+    padding: .7rem;
+    border: 2px solid hsl(22, 95%, 53%);
+    border-radius: 5px;
+    color: hsl(22, 95%, 53%);
+    line-height: 4.5rem;
+    text-decoration: none;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bold;
+}
+
+.skills {
+    margin-top: 4rem;
+    font-family: 'Ubuntu Mono', monospace;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.icons {
+    width: 2.5rem;
+    height: auto;
+    margin: .3rem;
+}
+
+.gitDiv {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.gitHubLink {
+    color: hsl(180, 100%, 93%);
+    font-family: 'Ubuntu Mono', monospace;
+    text-decoration: none;
+    float: right;
+}
+
+@media only screen 
+and (max-width: 768px) {
+    
+    nav .sectionLinks,
+    nav .navDivider {
+        display: none;
+    }
+}
+
+@media only screen 
+and (max-width: 499px) {
+    html {
+        font-size: 16px;
+    }
+}
+
