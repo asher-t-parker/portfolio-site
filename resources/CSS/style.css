@@ -72,7 +72,7 @@ nav {
 }
 
 .iAm,
-.fullStack,
+.se,
 .adjContainer {
     font-family: Raleway, sans-serif;
 }
@@ -118,7 +118,7 @@ nav {
     letter-spacing: .35rem;
 }
 
-.fullStack {
+.se {
     color: hsl(180, 38%, 70%);
     grid-area: 1/2;
 }
